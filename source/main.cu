@@ -13,7 +13,6 @@ Description: Calculates the heat distribution on a thin plate using cuda events.
 
 /*
 * calculates the heat conduction in a thin metal plate 
-* implementing the code provided in the lab document 
 */
 __global__ void heatConduction(const double *__restrict__ G, double *__restrict__ H, const int interiorX, const int interiorY)
 {
@@ -27,7 +26,7 @@ __global__ void heatConduction(const double *__restrict__ G, double *__restrict_
 
 /*
 * Initilize grid
-* initial interior temperature of 20°C 
+* initial interior temperature of 20Â°C 
 * fixed boundary temperature of 100* celcious 
 */
 void Initialize(double *__restrict h_Matrix, const int interiorX, const int interiorY)
